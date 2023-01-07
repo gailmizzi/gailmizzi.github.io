@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+/*****************************
+            TAGS
+******************************/
+a {
+    color: #4f6f80;
+    text-decoration: none;
+}
+a:hover {
+    color: #d6bd88;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 1em;
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+footer {
+  
+    background-color: #f0dfd1;
+    font-size: .9em;
+    margin-top: 4em;
+    padding-bottom: 1.11em;
+    padding-top: 1.11em;
+}
+
+ol, ul {
+    margin: 0;
+}
+
+/*****************************
+            CLASSES
+******************************/
+
+.blog-item {
+    margin-bottom: 2em;
+}
+.blog-item h2 {
+    margin-bottom: .5em;
+}
+.blog-item p {
+    margin: 1em 0;
+}
+.blog-item .read-more {
+    display: block;
+    text-align: right;
+}
+
+.blog-post header {
+    text-align: center;
+    margin-top: 4em;
+}
+.blog-post .category {
+    text-transform: uppercase;
+}
+.blog-post .image {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+.blog-post .subtitle {
+    margin-top: 2em;
+}
+.blog-post .title {
+    text-transform: capitalize;
+}
+
+.blog-sidebar h4 {
+    text-transform: uppercase;
+    margin: 1em 0 .25em;
+}
+.blog-sidebar p {
+    margin: 0;
+}
+
+.button {
+    background-color: #c89975;
+    border-radius: .25em;
+    color: #ffffff;
+    padding: .5em;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+.button:hover {
+    background-color: #edcfac;
+    color: #ffffff;
+}
+
+.centered {
+    text-align: center;
+}
+
+.contact-details hr {
+border: none;
+border-top: 1px solid #edcfac;
+margin: 2em 0;
+}
+
+.contact-details h3{
+    margin-bottom: 0.5em;
+}
+
+.contact-details p{
+    margin: 0;
+}
+
+.contact-form .container{
+margin: 0 -1rem;
+}
+
+.contact-form .row .col-12{
+     margin-top: 2em;
+}
+
+.contact-form label, .contact-form input, .contact-form select, .contact-form textarea{
+display: block;
+width: 100%;
+
+}
+
+.contact-form label{
+    margin-bottom: 0.5em;
+}
+
+.contact-form input, .contact-form select,  .contact-form textarea{
+border: 1px solid #edcfac;
+font-family: inherit;
+font-size: 1em;
+padding: 0.5em;
+}
+
+.contact-form .button{
+    cursor: pointer;
+    padding: 1em;
+}
+
+.contact-form .clear{
+    background-color: #edcfac;
+}
+
+.contact-form :invalid{
+    border-color: rgb(206, 33, 33);
+    color: maroon;
+}
+.contact-form :invalid::placeholder{
+  color: darkred;
+}
+
+.cover-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.d-block {
+    display: block;
+}
+.d-flex {
+    display: flex;
+}
+
+.image figcaption {
+    font-size: .75em;
+    margin-top: .5em;
+    text-align: center;
+}
+
+.jumbotron {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30em;
+    margin-bottom: 2em;
+    position: relative;
+}
+.jumbotron h1 {
+    background-color: #edcfac;
+    bottom: 0;
+    margin: .5em;
+    padding: .25em .5em;
+    position: absolute;
+}
+
+.navbar {
+    border-bottom: 1px solid #edcfac;
+    padding: .5em;
+}
+.navbar .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.navbar-nav li {
+    padding: .5em;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.rounded-image img {
+    border-radius: 8px;
+    display: block;
+    width: 50%;
+}
+
+
+
+.separator {
+    height: 2.5em;
+}
+
+.summary li {
+    margin-top: 1em;
+}
+
+.trending-list {
+    counter-reset: trending;
+    list-style: none;
+}
+.trending-list li {
+    counter-increment: trending;
+    position: relative;
+    margin-bottom: 1.5em;
+}
+.trending-list li::before {
+    color: #edcfac;
+    display: block;
+    position: absolute;
+    content: counter(trending);
+    font-size: 1.5em;
+    font-weight: bold;
+    left: -1.25em;
+}
+.trending-list a {
+    color: #000000;
+}
+.trending-list h4 {
+    text-transform: none;
+}
+
