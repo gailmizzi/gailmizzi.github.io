@@ -44,7 +44,10 @@ ol, ul {
 /*****************************
             CLASSES
 ******************************/
-
+html, body{
+    margin: 0;
+    padding: 0;
+}
 .blog-item {
     margin-bottom: 2em;
 }
@@ -170,6 +173,15 @@ padding: 0.5em;
     display: flex;
 }
 
+
+.main-header{
+    background-color: rgba(red, green, blue, alpha);
+    background-blend-mode: multiply;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom : 30px;
+}
 .image figcaption {
     font-size: .75em;
     margin-top: .5em;
@@ -191,6 +203,11 @@ padding: 0.5em;
     margin: .5em;
     padding: .25em .5em;
     position: absolute;
+}
+
+
+.ul {
+    margin: 0;
 }
 
 .navbar {
