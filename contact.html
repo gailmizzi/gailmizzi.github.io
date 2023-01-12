@@ -52,13 +52,62 @@
                     </p>
                 </div>
             </div>
-            
+
             <div class="row">
-                <div class="col-7">
-                    <h3></h3>
+                <div class="col-12">
+                    <h3>Book An Appointment</h3>
+
+                    <form action="mizzigail@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-6">
+                                    <label for="first name input">Name</label>
+                                    <input type="text" name="first-name" id="first-name-input" placeholder="Name" required>
+                                </div>
+
+
+                                <div class="col-6">
+                                    <label for="Last name input">Surname</label>
+                                    <input type="text" name="last-name" id="last-name-input" placeholder="Surname" required>
+                                </div>
+
+                                <div class="col-12">
+                                     <label for="email-input">Email</label>
+                                     <input type="email" name="email" id="email-input" placeholder="user@mail.com" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="topic-dropdown">Makeup</label>
+                                    <select name="topic" id="topic-dropdown" required>
+                                        <option value=""disabled selected> Please Choose</option>
+                                        <option value="SFX">SFX Makeup</option>
+                                        <option value="Creative/Fantasy"> Creative/Fanatsy Makeup</option>
+                                        <option value="Belly Painting">Belly Painting</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="date-input">Date Of Appointment</label>
+                                    <input type="date" id="date" name="date">
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="button">Book</button>
+                                    <button type="reset" class="button clear"> Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
             
+            <div class="col-4">
+                <div class="contact-details">
+                    <h3>Email</h3>
+                    <a href="mailto:mizzigail@gmail.com">mizzigail@gmail.com</a>
+                </div>
+            </div>
         </main>
     </div>
     
@@ -71,23 +120,7 @@
                     
                 </div>
                 <div class="col-1"></div>
-                <div class="col-4">
-                    <h5>Navigate</h5>
-                    <ul>
-                        <li>
-                            <a href="home.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="blog.html">Blog</a>
-                        </li>
-                        <li>
-                            <a href="sevices.html">Services</a>
-                        </li>
-                        <li>
-                            <a href="about-us.html">About us</a>
-                        </li>
-                    </ul>
-                </div>
+                
             </div>
         </div>
     </footer>
