@@ -1,0 +1,31 @@
+/* CSS rule sets for elements by type*/
+
+div{background-color: #ffedfb;}
+
+h1{color: #006969;}
+
+h2{color: #006969;}
+
+p{ color: #800000; }
+
+body{ background-color: #f0ffff;}
+
+
+/* CSS ruleset targeting an elemnts by its ID*/
+#boldspan{
+    font-weight: bold;
+}
+
+/* CSS Class that can be used for multiple elements*/
+.specialParagraph{ font-family: monospace, Arial, Helvetica, sans-serif;}
+
+.bigbox{
+    background-color: #fff0fc;
+    display: flex;
+}
+
+.smallbox{
+    background-color: #c8bbc37e;
+    margin: 10px;
+    padding: 20px;
+}

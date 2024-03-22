@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    
+    <h1>Contact Form</h1>
+    
+    <!-- 
+        A form is used to give the user the possibility to submit some information.
+        A form requires 2 attributes
+        Action - The URL, it should send the information to
+        Method - the type of process it should use (post/get)
+    -->
+    <form action="mailto:abc@google.com" method="post" enctype="text/plain">
+
+    <!-- 
+        An input can take many different forms.
+        thay all require a 'name' to associate values
+        and an 'id' to link with the label.
+    -->
+        
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        
+        <br> <!-- BR is used to start a new line-->
+        
+        <label for="Surname">Surname</label>
+        <input type="text" name="Surname" id="Surname">
+        
+        <br>
+        
+        <label for="Email">Email</label>
+        <input type="email" name="email" id="email">
+        
+        <br>
+        <!-- Setting the type to 'password' hides the password in the browser-->
+        <label for="password">password</label>
+        <input type="password" name="password" id="password">
+        
+        <br>
+        
+        <label for="colour">Favourite colour</label>
+        <select name="colour" id="colour">
+            <!-- Each option in the tag requires a value-->
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="purple">Purple</option>
+        </select>
+        
+        <!-- fieldset is to create a checkbox list-->
+        <fieldset>
+            <legend>What items of clothing do you prefer?</legend> 
+            
+            <input type="checkbox" name="clothing" id="tshirts">
+            <label for="tshirts">T-shirts</label>
+            
+            <br>
+            
+            <input type="checkbox" name="clothing" id="hoodies">
+            <label for="hoodies">Hoodies</label>
+            
+            <br>
+            
+            <input type="checkbox" name="clothing" id="jeans">
+            <label for="jeans">Jeans</label>
+            
+            <br>
+            
+            <input type="checkbox" name="clothing" id="dress">
+            <label for="dress">Dresses</label>
+            
+            <br>
+            
+            <input type="checkbox" name="clothing" id="jeans">
+            <label for="jeans">Jeans</label>
+            
+            <br>
+            
+            <input type="checkbox" name="clothing" id="shorts">
+            <label for="shorts">Shorts</label>
+            
+            <br>
+            
+            <input type="checkbox" name="clothing" id="jackets">
+            <label for="jackets">Jackets</label>
+            
+        </fieldset>
+
+            <br>
+
+        <fieldset>
+            <legend>What would you bring to a deserted island</legend>
+            
+            
+            <input type="radio" name="island" id="food">
+            <label for="food">Food</label>
+
+            <br>
+            
+            <input type="radio" name="island" id="gear">
+            <label for="gear">Gear</label>
+
+            <br>
+            
+            <input type="radio" name="island" id="electronics">
+            <label for="electronics">Electronics</label>
+
+        </fieldset>
+        
+            <br>
+        
+            <button type="submit"> submit</button>
+
+            <br>
+
+            <button type="reset">Cancel</button>
+        
+        
+        
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootsrtap examples</title>
+    <link rel="stylesheet" href="assets/styling/bootstrap.css">
+
+
+
+</head>
+
+<body>
+    <h1 class="text-primary">BBC News</h1>
+    <p class="text-info-emphasis">Dumb shit</p>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <button type="button" class="btn btn-primary">First button</button>
+    <a href="index -Header.html" class="btn btn-secondary">Home page</a>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger">Dropdown</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Small</a></li>
+            <li><a class="dropdown-item" href="#">Mediumn</a></li>
+            <li><a class="dropdown-item" href="#">Large</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="assets/images/img1.jpeg" class="card-img-top" alt="this is not large">
+        <div class="card-body">
+            <h5 class="card-title">Mc Donalds Fight</h5>
+            <p class="card-text">Woman claims Large Mc Donalds fries are NOT LARGE, and fights manager.</p>
+            <div class="d-grid gap-2">
+                <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/bean.jpeg" class="d-block w-100" alt="baby bean">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/fairy.jpg" class="d-block w-100" alt="fairy">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/kiss.jpeg" class="d-block w-100" alt="kissy">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
