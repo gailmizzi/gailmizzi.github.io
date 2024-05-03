@@ -4,237 +4,239 @@
 
 /* font styling*/
 .html{
-    .m-plus-rounded-1c-black {
-        font-family: "M PLUS Rounded 1c", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-      }
-        font-size: 25px;
-    }
+  .m-plus-rounded-1c-black {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  font-size: 25px;
+}
 
 body{
-    margin: 0;
+  margin: 0;
 }
 
 
 /* Background styling*/
 .background{
-    background-color: rgb(182, 238, 255);
+  background-color: rgb(182, 238, 255);
 }
 
 #hamburger {
-    fill: rgb(0, 9, 67);
-height: 60px;
-width: 60px;
-margin: 10px;
-cursor: pointer;
+  fill: rgb(0, 9, 67);
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+  cursor: pointer;
 }
 
 
 /* animation styling*/
 .dotlottie-player{ 
-    position:center;
-    background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
+  position:center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Sidebar styling*/
 
 #sidebar{
-width: 0px;
-height: 65vh;
-background-color: rgb(247, 247, 247);
-opacity: 75%;
-position: fixed;
-top: 0;
-left: 0;
-z-index: 2;
-overflow: hidden;
-transition: width 0.5s ease;
-white-space: nowrap;
-
+  width: 0px;
+  height: 65vh;
+  background-color: rgb(247, 247, 247);
+  opacity: 75%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  overflow: hidden;
+  transition: width 0.5s ease;
+  white-space: nowrap;
+  
 }
 
 
 
 /* text styling*/
 .sidebar-item{
-text-decoration: none;
-color: black;
-opacity: 100%;
-display: flex;
-padding: 1em;
-align-items: center;
-cursor: pointer;
+  text-decoration: none;
+  color: black;
+  opacity: 100%;
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  cursor: pointer;
 }
 
 .sidebar-item:hover{
-background-color: rgb(212, 212,212);
+  background-color: rgb(212, 212,212);
 }
 
 .sidebar-item > div{
-padding: 0 1em;
+  padding: 0 1em;
 }
 
 
 #overlay{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(182, 238, 255);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(182, 238, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
 }
 
 /* sound toggle switch*/
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-
-/* small logo on right side styling*/
-  header nav{
-    display: flex;
-    height: 10px;
-    width: 100%;
-    
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-  header nav .imageDiv{
-    height: 100%;
-    padding: 10px;
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* small logo on right side styling*/
+header nav{
+  display: flex;
+  height: 10px;
+  width: 100%;
+  
+}
+
+header nav .imageDiv{
+  height: 100%;
+  padding: 10px;
 }
 
 header nav .imageDiv img{
-    height: 150px;
-    margin-left: auto; 
+  height: 150px;
+  margin-left: auto; 
 }
 
 .col-4 {
   padding-left: 1250px;
-    
-  }
   
+}
 
- /*Start button styling*/
+
+/*Start button styling*/
 .block {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border: none;
-    background-color: none;
-    padding: 14px 28px;
-    font-size: 30px;
-    cursor: pointer;
-    text-align: center;
-  }
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: none;
+  padding: 14px 28px;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+}
 
 
 /*Main title styling*/
-  .mainDiv{
-    display: flex;
+.mainDiv{
+  display: flex;
 }
 
 main{
-    flex: 5;
+  flex: 5;
 }
 
 
 
 main section{
-    display: flex;
-    width: 100%;
-    max-height: 500px;
-    overflow: hidden;
+  display: flex;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
 }
 
 main section div{
-    flex: 1;
+  flex: 1;
 }
 /* catergories title styling*/
 main section h2, main section p{
-    padding: 100px 100px 0px;
-    font-size: 150px;
-    font-family: "M PLUS Rounded 1c", black,  sans-serif;
-    text-align: center;
+  padding: 100px 100px 0px;
+  font-size: 150px;
+  font-family: "M PLUS Rounded 1c", black,  sans-serif;
+  text-align: center;
 }
 
 /*ammount of players styling*/
 main section h1, main section p{
-    padding: 100px 100px 0px;
-    font-size: 130px;
-    font-family: "M PLUS Rounded 1c", black,  sans-serif;
-    text-align: center;
+  padding: 100px 100px 0px;
+  font-size: 130px;
+  font-family: "M PLUS Rounded 1c", black,  sans-serif;
+  text-align: center;
 }
 
 /* Category buttons styling*/
 
 .button {
-    border: none;
-    color: white;
-    font-family: "M PLUS Rounded 1c", black,  sans-serif;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    margin: 4px 2px;
-    cursor: pointer;
-    
-    
-  }
+  border: none;
+  color: white;
+  font-family: "M PLUS Rounded 1c", black,  sans-serif;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
+
+/*star rating styling*/
+
