@@ -38,6 +38,33 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
+
+
+/* contact page background annimation styling*/
+
+
+.lottie-bg {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .lottie-bg {
+      width: 100%;
+  }
+}
+div {
+  animation-fill-mode: backwards;
+}
+
+
 /* Sidebar styling*/
 
 #sidebar{
@@ -206,6 +233,56 @@ main section{
 main section div{
   flex: 1;
 }
+
+/*feedback input box*/
+input {
+  text-align: center;
+  padding: 20px 20px 0px;
+  display: inline-block;
+}
+
+.col-6{
+font-size: 20px;
+text-align: center;
+padding-left: 25px;
+padding-top: 20px;
+opacity: 80%;
+border:none ;
+font-family: "M PLUS Rounded 1c", black,  sans-serif;
+cursor: pointer;
+color: #fced99;
+
+
+
+
+}
+.col-5{
+text-align: center;
+padding-left: 150px;
+opacity: 65%;
+border-radius:none ;
+font-family: "M PLUS Rounded 1c", black,  sans-serif;
+font-size: 20px;
+}
+
+
+
+/*submit & cancel buttons*/
+button{
+  text-align: center;
+  position:relative;
+  font-family: "M PLUS Rounded 1c", black,  sans-serif;
+  font-size: 20px;
+  
+}
+
+/*feedback text styling*/
+main section h3, main section p{
+  padding: 50px 50px 0px;
+  font-size: 50px;
+  font-family: "M PLUS Rounded 1c", black,  sans-serif;
+  text-align: center;
+}
 /* catergories title styling*/
 main section h2, main section p{
   padding: 100px 100px 0px;
@@ -236,6 +313,11 @@ main section h1, main section p{
   margin: 4px 2px;
   cursor: pointer;
   
+}
+
+.h2{
+
+
 }
 
 /*star rating styling*/
@@ -353,7 +435,6 @@ main section h1, main section p{
   position: relative;
   font-size: 100%;
 }
-
 
 
 

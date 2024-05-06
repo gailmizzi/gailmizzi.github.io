@@ -12,133 +12,191 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <style>
+        #myDIV {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  background-image: url('smiley.gif');
+  background-position: top left;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {background-position: center;}
+}
+    </style>
 </head>
 
 <body  class=background>
-    <header>
-        <nav>
-            <a href="categories.html">
-                <div class="imageDiv">
-                    <div class="row">
-                        <div class="col-5">
-                            
-                        </div>
-                        <div class="col-3">
-                            
-                        </div>
-                        <div class="col-4">
-                            <img src="../gailmizzi.github.io/assets/images/funzee logo-01.png" alt="">
-                        </div>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    
+    <div class="lottie-bg">
+        <dotlottie-player src="https://lottie.host/135788d6-71d7-4cec-baf5-747ccf03e2cd/jcxy3A4ced.json" 
+        background="transparent" speed="1" style="width: 100%; height: 100%; z-index: -1;" loop autoplay>
+    </dotlottie-player>
+</div>
+
+
+
+<header>
+    <nav>
+        <a href="categories.html">
+            <div class="imageDiv">
+                <div class="row">
+                    <div class="col-5">
+                        
                     </div>
-                    
+                    <div class="col-3">
+                        
+                    </div>
+                    <div class="col-4">
+                        <img src="../gailmizzi.github.io/assets/images/funzee logo-01.png" alt="">
+                    </div>
                 </div>
-            </a>
-        </nav>
-    </header>
+                
+            </div>
+        </a>
+    </nav>
+</header>
+
+<main class="html">
+    <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    height="30px" 
+    viewBox="0 0 24 24"
+    width="30px" 
+    fill="#000000"
+    id="hamburger">
     
-    <main class="html">
-        <svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        height="30px" 
-        viewBox="0 0 24 24"
-        width="30px" 
-        fill="#000000"
-        id="hamburger">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+<div id="overlay" ></div>
+
+
+<div id="sidebar"> 
+    <a href="" class="sidebar-item">
+        <div>Home</div>
+    </a> 
+    <a href="" class="sidebar-item">
+        <div>Re-start Quiz</div>
+    </a>
+    <a href="" class="sidebar-item">
+        <div>About Us</div>
+    </a>
+    <a href="" class="sidebar-item">
+        <div> Contact Us</div>
+    </a>
+    <a href="" class="sidebar-item">
+        <div> Sound</div>
         
-        <path d="M0 0h24v24H0z" fill="none"/>
-        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-    </svg>
-    <div id="overlay" ></div>
-    
-    
-    <div id="sidebar"> 
-        <a href="" class="sidebar-item">
-            <div>Home</div>
-        </a> 
-        <a href="" class="sidebar-item">
-            <div>Re-start Quiz</div>
-        </a>
-        <a href="" class="sidebar-item">
-            <div>About Us</div>
-        </a>
-        <a href="" class="sidebar-item">
-            <div> Contact Us</div>
-        </a>
-        <a href="" class="sidebar-item">
-            <div> Sound</div>
-            
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
-        </a>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </a>
+</div>
+
+<div class="mainDiv">
+    <main>
+        <section>
+            <div>
+                <h1>Rate Us </h1>
+            </div>
+        </section>
+        
+        
+        
+        
     </div>
     
-    <div class="mainDiv">
-        <main>
-            <section>
-                <div>
-                    <h1>Rate Us </h1>
-                </div>
-            </section>
-            
-            
-            
-            
+    
+    <div class="rating" data-vote="0">
+        
+        
+        <div class="star hidden">
+            <span class="full" data-value="0"></span>
+            <span class="half" data-value="0"></span>
         </div>
         
-        
-        <div class="rating" data-vote="0">
-            
-     
-            <div class="star hidden">
-                <span class="full" data-value="0"></span>
-                <span class="half" data-value="0"></span>
-            </div>
-            
-            <div class="star">
-                <span class="full" data-value="1"></span>
-                <span class="half" data-value="0.5"></span>
-                <span class="selected"></span>
-            </div>
-            
-            <div class="star">
-                <span class="full" data-value="2"></span>
-                <span class="half" data-value="1.5"></span>
-                <span class="selected"></span>
-            </div>
-            
-            <div class="star">
-                <span class="full" data-value="3"></span>
-                <span class="half" data-value="2.5"></span>
-                <span class="selected"></span>
-            </div>
-            
-            <div class="star">
-                <span class="full" data-value="4"></span>
-                <span class="half" data-value="3.5"></span>
-                <span class="selected"></span>
-            </div>
-            
-            <div class="star">
-                <span class="full" data-value="5"></span>
-                <span class="half" data-value="4.5"></span>
-                <span class="selected"></span>
-            </div>
-            
+        <div class="star">
+            <span class="full" data-value="1"></span>
+            <span class="half" data-value="0.5"></span>
+            <span class="selected"></span>
         </div>
         
+        <div class="star">
+            <span class="full" data-value="2"></span>
+            <span class="half" data-value="1.5"></span>
+            <span class="selected"></span>
+        </div>
         
+        <div class="star">
+            <span class="full" data-value="3"></span>
+            <span class="half" data-value="2.5"></span>
+            <span class="selected"></span>
+        </div>
         
+        <div class="star">
+            <span class="full" data-value="4"></span>
+            <span class="half" data-value="3.5"></span>
+            <span class="selected"></span>
+        </div>
         
+        <div class="star">
+            <span class="full" data-value="5"></span>
+            <span class="half" data-value="4.5"></span>
+            <span class="selected"></span>
+        </div>
         
-    </main>
+    </div>
+    
+    
+    <form action="mailto:abc@google.com" method="post" enctype="text/plain">
+        <section>
+            <div>
+                <h3> Give us feedback</h3>
+            </div>
+        </section>
+        
+        <div class="row">
+            <div class="col-3">
+                
+            </div>
+            <div class="col-5">
+                <input type="text" name="name" id="text">
+            </div>
+            <div class="col-4">
+                
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-3">
+                
+            </div>
+            <div class="col-6">
+                
+                <button type="submit"> Submit</button> 
+                <button type="reset">Cancel</button>
+            </div>
+        </div>
+        <div class="col-3">
+            
+        </div>
+    </div>
     
     
     
+</form>
+</main>
+
+
+
+
+<script src="script.js">
     
-    <script src="script.js">
-        
-    </script>
+</script>
 </body>
 </html>
