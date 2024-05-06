@@ -293,20 +293,25 @@ button{
   position:relative;
   font-family: "M PLUS Rounded 1c", black,  sans-serif;
   font-size: 20px;
-  
+  display: block;
 }
 
 /*button answers options*/
 .btn-group button{
   width: 50%;
   display: block;
+  text-align: center;
+
 }
 
 .btn-group button:not(:last-child){
   border-bottom: none;
 }
 
-.btn-group button:hover{
+.btn-group btn-danger button:hover{
+  background-color: #ff4545;
+}
+.btn-group btn-success button:hover{
   background-color: #548f38;
 }
 /*question text styling*/
