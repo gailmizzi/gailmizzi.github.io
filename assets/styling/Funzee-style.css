@@ -234,11 +234,31 @@ main section div{
   flex: 1;
 }
 
+.mainDiv div{
+  display: flex;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+
 /*feedback input box*/
 input {
   text-align: center;
   padding: 20px 20px 0px;
   display: inline-block;
+}
+
+.col-8 button{
+font-size: 50px;
+display: inline-block;
+text-align: center;
+padding-left: 40px;
+padding-top: 25px;
+opacity: 100%;
+border:none ;
+font-family: "M PLUS Rounded 1c", black,  sans-serif;
+cursor: pointer;
 }
 
 .col-6{
@@ -274,6 +294,27 @@ button{
   font-family: "M PLUS Rounded 1c", black,  sans-serif;
   font-size: 20px;
   
+}
+
+/*button answers options*/
+.btn-group button{
+  width: 50%;
+  display: block;
+}
+
+.btn-group button:not(:last-child){
+  border-bottom: none;
+}
+
+.btn-group button:hover{
+  background-color: #548f38;
+}
+/*question text styling*/
+main section h4, main section p{
+  padding: 100px 100px 0px;
+  font-size: 75px;
+  font-family: "M PLUS Rounded 1c", black,  sans-serif;
+  text-align: center;
 }
 
 /*feedback text styling*/
