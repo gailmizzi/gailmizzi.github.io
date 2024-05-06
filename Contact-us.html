@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 
@@ -82,61 +83,62 @@
             </section>
             
             
-            <div class="container">
-                
-                <div class="star">
-                    <a href="#" class="bi-star-fill"></a>
-                    <a href="#" class="bi-star-fill"></a>
-                    <a href="#" class="bi-star-fill"></a>
-                    <a href="#" class="bi-star-fill"></a>
-                    <a href="#" class="bi-star-fill"></a>
-                    
-                </div>
+            
+            
+        </div>
+        
+        
+        <div class="rating" data-vote="0">
+            
+     
+            <div class="star hidden">
+                <span class="full" data-value="0"></span>
+                <span class="half" data-value="0"></span>
             </div>
             
+            <div class="star">
+                <span class="full" data-value="1"></span>
+                <span class="half" data-value="0.5"></span>
+                <span class="selected"></span>
+            </div>
             
+            <div class="star">
+                <span class="full" data-value="2"></span>
+                <span class="half" data-value="1.5"></span>
+                <span class="selected"></span>
+            </div>
             
-            <nav>
-                
-                
-                <div class="row">
-                    <div class="col-2">       
-                    </div>
-                    
-                    <div class="col-8">
-                        
-                    </div>
-                    
-                    <div class="col-2">   
-                    </div>
-                </div>  
-                
-                
-            </nav>
+            <div class="star">
+                <span class="full" data-value="3"></span>
+                <span class="half" data-value="2.5"></span>
+                <span class="selected"></span>
+            </div>
             
-        </main>
+            <div class="star">
+                <span class="full" data-value="4"></span>
+                <span class="half" data-value="3.5"></span>
+                <span class="selected"></span>
+            </div>
+            
+            <div class="star">
+                <span class="full" data-value="5"></span>
+                <span class="half" data-value="4.5"></span>
+                <span class="selected"></span>
+            </div>
+            
+        </div>
         
-    </div>
+        
+        
+        
+        
+    </main>
     
     
     
     
-    
-    
-</main>
-
-
-
-
-<script src="script.js">
-    var stars = document.querySelectorAll('.star a');
-    stars.forEach((item, index1) => {
-        item.addEventListener('click', () => {
-            stars.forEach((star, index2) => {
-            index >= index2 ? star. classList.add ('active'): star. classList.remove ('active')
-            })
-        })
-    })
-</script>
+    <script src="script.js">
+        
+    </script>
 </body>
 </html>
