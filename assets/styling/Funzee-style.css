@@ -19,7 +19,7 @@ body{
 
 /* Background styling*/
 .background{
-  background-color: rgb(182, 238, 255);
+  background-color: #b6eeff;
 }
 
 #hamburger {
@@ -84,7 +84,7 @@ div {
 
 
 
-/* text styling*/
+/* sidebar text styling*/
 .sidebar-item{
   text-decoration: none;
   color: black;
@@ -112,7 +112,7 @@ div {
   top: 0;
   left: 0;
   z-index: 1;
-  display: none;
+  display:none;
 }
 
 /* sound toggle switch*/
@@ -287,6 +287,7 @@ font-size: 20px;
 
 
 
+
 /*submit & cancel buttons*/
 button{
   text-align: center;
@@ -314,6 +315,32 @@ button{
 .btn-group btn-success button:hover{
   background-color: #548f38;
 }
+
+
+
+
+
+
+
+
+/*abut us text styling*/
+
+main section h6, main section p{
+  padding: 100px 100px 0px;
+  font-size: 150px;
+  font-family: "M PLUS Rounded 1c", black,  sans-serif;
+  text-align: center;
+  margin-left: 300px;
+}
+
+main section h5, main section p{
+  padding: 20px 200px ;
+  font-size:40px;
+  font-family: "M PLUS Rounded 1c", black,  sans-serif;
+  text-align: center;
+}
+
+
 /*question text styling*/
 main section h4, main section p{
   padding: 100px 100px 0px;
@@ -483,6 +510,120 @@ main section h1, main section p{
 }
 
 
+/*Dashboard bars styling*/
 
+body{
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  perspective: 65em;
+  perspective-origin: 50% calc(50% - 5em);
+  background: #b6eeff;
+}
+
+div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+}
+
+.maindiv{
+  transform: rotateY(50deg) translate3d(0, -10em, 5em);
+  animation: move 7s linear infinite;
+}
+
+@keyframes move{
+  to{
+      transform: rotateY(-25deg) translate3d(0, 6em, 0) ;
+  }
+}
+
+.bar{
+  transform-origin:  0 2.5em 0;
+  animation: grow 7s cubic-bezier(0.19, 1, 0.23, 1) infinite;
+}
+
+.bar:nth-child(1){
+  margin-left: -15em;
+  transform:scaleY(1);
+  color: #0004ff;
+}
+
+.bar:nth-child(4){
+  margin-left: 7.5em;
+  transform:scaleY(2.7);
+  color: #ffd102;
+}
+
+.bar:nth-child(2){
+  margin-left: -7.5em;
+  transform:scaleY(2);
+  color: #06bb00;
+}
+
+.bar:nth-child(3){
+  margin-left: 0em;
+  transform:scaleY(3);
+  color: #d91cff;
+}
+
+.bar:nth-child(5){
+  margin-left: 15em;
+  transform:scaleY(3);
+  color: #ff1c1c;
+}
+
+@keyframes grow{
+  0%{
+      transform: scaleY(0);
+  }
+}
+
+
+
+.face{
+  margin: -2.5em;
+  width: 5em;
+  height: 5em;
+  backfront-visibility:hidden;
+  background: currentColor;
+}
+
+.face:nth-child(n + 2):before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  opacity: .05;
+  background: inherit;
+  
+}
+
+.face:nth-child(1){
+  transform: rotate3d(1,0,0,90deg) translateZ(2.5em);
+  -webkit-filter: brightness(0.7);
+  filter: brightness(0.7);
+}
+
+.face:nth-child(2){
+  transform: rotate3d(0,1,0,-90deg) translateZ(2.5em);
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.face:nth-child(3){
+  transform: rotate3d(0,1,0,0deg) translateZ(2.5em);
+  -webkit-filter: brightness(0.85);
+  filter: brightness(0.85);
+}
+
+.face:nth-child(4){
+  transform: rotate3d(0,1,0,90deg) translateZ(2.5em);
+  -webkit-filter: brightness(0.55);
+  filter: brightness(0.55);
+}
 
 

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ashboard</title>
+    <link rel="stylesheet" href="assets/styling/bootstrap.css">
+    <link rel="stylesheet" href="assets/styling/Funzee-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;900&display=swap" rel="stylesheet">
+    
+</head>
+<style type="text/css">
+    body{
+        overflow: hidden;
+        margin: 0;
+        height: 100vh;
+        perspective: 65em;
+        perspective-origin: 50% calc(50% - 5em);
+        background: #b6eeff;
+    }
+    
+    div{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-style: preserve-3d;
+    }
+    
+    .maindiv{
+        transform: rotateY(50deg) translate3d(0, -10em, 5em);
+        animation: move 7s linear infinite;
+    }
+    
+    @keyframes move{
+        to{
+            transform: rotateY(-25deg) translate3d(0, 6em, 0) ;
+        }
+    }
+    
+    .bar{
+        transform-origin:  0 2.5em 0;
+        animation: grow 7s cubic-bezier(0.19, 1, 0.23, 1) infinite;
+    }
+    
+    .bar:nth-child(1){
+        margin-left: -15em;
+        transform:scaleY(1);
+        color: #0004ff;
+    }
+    
+    .bar:nth-child(4){
+        margin-left: 7.5em;
+        transform:scaleY(2.7);
+        color: #ffd102;
+    }
+    
+    .bar:nth-child(2){
+        margin-left: -7.5em;
+        transform:scaleY(2);
+        color: #06bb00;
+    }
+    
+    .bar:nth-child(3){
+        margin-left: 0em;
+        transform:scaleY(3);
+        color: #d91cff;
+    }
+    
+    .bar:nth-child(5){
+        margin-left: 15em;
+        transform:scaleY(3);
+        color: #ff1c1c;
+    }
+    
+    @keyframes grow{
+        0%{
+            transform: scaleY(0);
+        }
+    }
+    
+    
+    
+    .face{
+        margin: -2.5em;
+        width: 5em;
+        height: 5em;
+        backfront-visibility:hidden;
+        background: currentColor;
+    }
+    
+    .face:nth-child(n + 2):before{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: inherit;
+        height: inherit;
+        opacity: .05;
+        background: inherit;
+        
+    }
+    
+    .face:nth-child(1){
+        transform: rotate3d(1,0,0,90deg) translateZ(2.5em);
+        -webkit-filter: brightness(0.7);
+        filter: brightness(0.7);
+    }
+    
+    .face:nth-child(2){
+        transform: rotate3d(0,1,0,-90deg) translateZ(2.5em);
+        -webkit-filter: brightness(1);
+        filter: brightness(1);
+    }
+    
+    .face:nth-child(3){
+        transform: rotate3d(0,1,0,0deg) translateZ(2.5em);
+        -webkit-filter: brightness(0.85);
+        filter: brightness(0.85);
+    }
+    
+    .face:nth-child(4){
+        transform: rotate3d(0,1,0,90deg) translateZ(2.5em);
+        -webkit-filter: brightness(0.55);
+        filter: brightness(0.55);
+    }
+    
+    
+</style>
+
+
+
+<body>
+    
+    <header>
+        <nav>
+            <a href="categories.html">
+                <div class="imageDiv">
+                    <div class="row">
+                        <div class="col-5">
+                            
+                        </div>
+                        <div class="col-3">
+                            
+                        </div>
+                        <div class="col-4">
+                            <img src="../gailmizzi.github.io/assets/images/funzee logo-01.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+            </a>
+        </nav>
+    </header> 
+    
+    <main class="html"></main>
+    
+    <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    height="30px" 
+    viewBox="0 0 24 24"
+    width="30px" 
+    fill="#000000"
+    id="hamburger">
+    
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+
+<div id="overlay" ></div>
+<div id="sidebar"> 
+    <a href="funzee.html" class="sidebar-item">
+        <div>Home</div>
+    </a> 
+    <a href="categories.html" class="sidebar-item">
+        <div>Re-start Quiz</div>
+    </a>
+    <a href="About-us.html" class="sidebar-item">
+        <div>About Us</div>
+    </a>
+    <a href="Contact-us.html" class="sidebar-item">
+        <div> Contact Us</div>
+    </a>
+    <a href="" class="sidebar-item">
+        <div> Sound</div>
+        
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </a>
+</div>
+
+
+
+
+<div class="maindiv">
+    
+    <div class="bar">
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+    </div>
+    
+    <div class="bar">
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+    </div>
+    
+    <div class="bar">
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
