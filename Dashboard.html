@@ -15,9 +15,9 @@
     body{
         overflow: hidden;
         margin: 0;
-        height: 100vh;
-        perspective: 65em;
-        perspective-origin: 50% calc(50% - 5em);
+        height: 125vh;
+        perspective: 75em;
+        perspective-origin: 200% calc(50% - 5em);
         background: #b6eeff;
     }
     
@@ -29,13 +29,13 @@
     }
     
     .maindiv{
-        transform: rotateY(50deg) translate3d(0, -10em, 5em);
+        transform: rotateY(0deg) translate3d(0em, 0em, 0em);
         animation: move 7s linear infinite;
     }
     
     @keyframes move{
         to{
-            transform: rotateY(-25deg) translate3d(0, 6em, 0) ;
+            transform: rotateY(55deg) translate3d(0, 6em, 0) ;
         }
     }
     
@@ -50,29 +50,22 @@
         color: #0004ff;
     }
     
-    .bar:nth-child(4){
-        margin-left: 7.5em;
-        transform:scaleY(2.7);
-        color: #ffd102;
+  .bar:nth-child(3){
+        margin-left: 0em;
+        transform:scaleY(3);
+        color: #d91cff;
+        
     }
+    
     
     .bar:nth-child(2){
         margin-left: -7.5em;
         transform:scaleY(2);
-        color: #06bb00;
+        color: #ffe600;
     }
     
-    .bar:nth-child(3){
-        margin-left: 0em;
-        transform:scaleY(3);
-        color: #d91cff;
-    }
-    
-    .bar:nth-child(5){
-        margin-left: 15em;
-        transform:scaleY(3);
-        color: #ff1c1c;
-    }
+   
+ 
     
     @keyframes grow{
         0%{
@@ -107,26 +100,20 @@
         -webkit-filter: brightness(0.7);
         filter: brightness(0.7);
     }
-    
+
+      .face:nth-child(3){
+        transform: rotate3d(0,1,0,0deg) translateZ(2.5em);
+        -webkit-filter: brightness(0.85);
+        filter: brightness(0.85);
+    }
     .face:nth-child(2){
         transform: rotate3d(0,1,0,-90deg) translateZ(2.5em);
         -webkit-filter: brightness(1);
         filter: brightness(1);
     }
     
-    .face:nth-child(3){
-        transform: rotate3d(0,1,0,0deg) translateZ(2.5em);
-        -webkit-filter: brightness(0.85);
-        filter: brightness(0.85);
-    }
-    
-    .face:nth-child(4){
-        transform: rotate3d(0,1,0,90deg) translateZ(2.5em);
-        -webkit-filter: brightness(0.55);
-        filter: brightness(0.55);
-    }
-    
-    
+  
+ 
 </style>
 
 
