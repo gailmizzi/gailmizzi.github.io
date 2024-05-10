@@ -300,7 +300,7 @@ button{
 
 /*button answers options*/
 .btn-group button{
-  width: 50%;
+  width: 300px !important;
   display: block;
   text-align: center;
 
@@ -389,10 +389,6 @@ main section h1, main section p{
   
 }
 
-.h2{
-
-
-}
 
 /*star rating styling*/
 
@@ -412,11 +408,12 @@ main section h1, main section p{
   display: inline-block;
   margin: 40px;
   font-size: 60px;
-  color: #ffe600;
+  color: #fffef4;
   position: relative;
   
   .animate {
-    -webkit-animation: stretch-bounce .5s   ease-in-out;}
+    -webkit-animation: stretch-bounce .5s   ease-in-out;
+    animation: stretch-bounce .5s   ease-in-out;}
     
     .hidden{ 
       opacity: 0;
@@ -511,3 +508,6 @@ main section h1, main section p{
 }
 
 
+.animatedBackground{
+  position: absolute;top:0px;left:50px;width: 100vw;height: 100wh;
+}
