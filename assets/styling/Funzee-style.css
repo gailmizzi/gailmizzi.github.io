@@ -57,7 +57,7 @@ body{
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   .lottie-bg {
-      width: 100%;
+    width: 100%;
   }
 }
 div {
@@ -202,14 +202,15 @@ header nav .imageDiv img{
 .block {
   display: block;
   margin: auto;
-  width: 100%;
-  height: 100%;
+  width: 100px !important;
+  height: 100px !important;
   border: none;
   background-color: none;
   padding: 1px 700px;
-  font-size: 30px;
+  font-size: 50px;
   cursor: pointer;
   text-align: center;
+  
 }
 
 
@@ -221,8 +222,6 @@ header nav .imageDiv img{
 main{
   flex: 5;
 }
-
-
 
 main section{
   display: flex;
@@ -251,39 +250,41 @@ input {
 }
 
 .col-8 button{
-font-size: 50px;
-display: inline-block;
-text-align: center;
-padding-left: 40px;
-padding-top: 25px;
-opacity: 100%;
-border:none ;
-font-family: "M PLUS Rounded 1c", black,  sans-serif;
-cursor: pointer;
+  font-size: 50px;
+  display: inline-block;
+  text-align: center;
+  padding-left: 40px;
+  padding-top: 25px;
+  opacity: 100%;
+  border:none ;
+  font-family: "M PLUS Rounded 1c", black,  sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+ 
 }
 
 .col-6{
-font-size: 20px;
-text-align: center;
-padding-left: 25px;
-padding-top: 20px;
-opacity: 80%;
-border:none ;
-font-family: "M PLUS Rounded 1c", black,  sans-serif;
-cursor: pointer;
-color: #fced99;
-
-
-
-
+  font-size: 20px;
+  text-align: center;
+  padding-left: 25px;
+  padding-top: 20px;
+  opacity: 80%;
+  border:none ;
+  font-family: "M PLUS Rounded 1c", black,  sans-serif;
+  cursor: pointer;
+  color: #fced99;
+  
+  
+  
+  
 }
 .col-5{
-text-align: center;
-padding-left: 150px;
-opacity: 65%;
-border-radius:none ;
-font-family: "M PLUS Rounded 1c", black,  sans-serif;
-font-size: 20px;
+  text-align: center;
+  padding-left: 150px;
+  opacity: 65%;
+  border-radius:none ;
+  font-family: "M PLUS Rounded 1c", black,  sans-serif;
+  font-size: 20px;
 }
 
 
@@ -296,14 +297,17 @@ button{
   font-family: "M PLUS Rounded 1c", black,  sans-serif;
   font-size: 20px;
   display: block;
+  text-decoration: none !important;
 }
 
 /*button answers options*/
 .btn-group button{
-  width: 300px !important;
+  width: 500px !important;
+  height: 100px !important;
   display: block;
   text-align: center;
-
+  text-decoration: none !important;
+  
 }
 
 .btn-group button:not(:last-child){
@@ -312,19 +316,16 @@ button{
 
 .btn-group btn-danger button:hover{
   background-color: #ff4545;
+  text-decoration: none;
 }
 .btn-group btn-success button:hover{
   background-color: #548f38;
+  text-decoration: none;
 }
 
 
 
-
-
-
-
-
-/*abut us text styling*/
+/*about us text styling*/
 
 main section h6, main section p{
   padding: 100px 100px 0px;
@@ -348,6 +349,7 @@ main section h4, main section p{
   font-size: 75px;
   font-family: "M PLUS Rounded 1c", black,  sans-serif;
   text-align: center;
+display: block;
 }
 
 /*feedback text styling*/
@@ -422,7 +424,7 @@ main section h1, main section p{
   
   .full{
     :before{
-    font-family: fontAwesome;
+      font-family: fontAwesome;
       display: inline-block;
       content: "\f005";
       position: relative;
@@ -483,31 +485,112 @@ main section h1, main section p{
         transition: 1s ease-out;
       }
     }
-
+    
     &.is-animated{
       &::before{
         transition: 1s ease-out;
       }
     }
   }
+  
+  
+  
+  .score-rating{
+    vertical-align: sup;
+    top: -5px;
+    position: relative;
+    font-size: 150%;
+  }
+  
+  .total{
+    vertical-align: sub;
+    top: 0px;
+    position: relative;
+    font-size: 100%;
+  }
+  
+  
+  .animatedBackground{
+    position: absolute;top:0px;left:50px;width: 100vw;height: 100wh;
+  }
 
 
 
-.score-rating{
-  vertical-align: sup;
-  top: -5px;
-  position: relative;
-  font-size: 150%;
-}
 
-.total{
-  vertical-align: sub;
-  top: 0px;
-  position: relative;
-  font-size: 100%;
-}
+/* Winner annimation*/
+
+  @function textShadow($precision, $size, $color){
+    $value: null;
+    $offset: 0;
+    $length: $size * (1 / $precision) - 1;
+  
+    @for $i from 0 through $length {
+      $offset: $offset + $precision;
+      $shadow: $offset + px $offset + px $color;
+      $value: append($value, $shadow, comma);
+    }
+  
+    @return $value;
+  }
+  
+  .playful span {
+    position: relative;
+    color: #2238ff;
+    text-shadow: textShadow(0.25, 6, #E485F8);
+    animation: scatter 1.75s infinite;
+  }
+  
+  .playful span:nth-child(2n) {
+    color: #ff453f;
+    text-shadow: textShadow(0.25, 6, #e0ff43);
+    animation-delay: 0.3s;
+  }
+  
+  .playful span:nth-child(3n) {
+    color: #9bd837;
+    text-shadow: textShadow(0.25, 6, #029e8f);
+    animation-delay: 0.15s;
+  }
+  
+  .playful span:nth-child(5n) {
+    color: #7e22ff;
+    text-shadow: textShadow(0.25, 6, #ff78e2);
+    animation-delay: 0.4s;
+  }
+  
+  .playful span:nth-child(7n), .playful span:nth-child(11n) {
+    color: #FF9C55;
+    text-shadow: textShadow(0.25, 6, #f92a2a);
+    animation-delay: 0.25s;
+  }
+  
+  @keyframes scatter {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -10px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  
+
+  h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-weight: normal;
+    display: block;
+    width: 666px;
+    max-width: 80vw;
+    min-height: 90px;
+    height: auto;
+    text-align: center;
+    margin: 10rem auto;
+    margin: calc(50vh - 5rem) auto;
+  }
 
 
-.animatedBackground{
-  position: absolute;top:0px;left:50px;width: 100vw;height: 100wh;
-}
+  

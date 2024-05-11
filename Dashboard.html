@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styling/winner-style.scss">
     
 </head>
 <style type="text/css">
@@ -21,99 +23,7 @@
         background: #b6eeff;
     }
     
-    div{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform-style: preserve-3d;
-    }
     
-    .maindiv{
-        transform: rotateY(0deg) translate3d(0em, 0em, 0em);
-        animation: move 7s linear infinite;
-    }
-    
-    @keyframes move{
-        to{
-            transform: rotateY(55deg) translate3d(0, 6em, 0) ;
-        }
-    }
-    
-    .bar{
-        transform-origin:  0 2.5em 0;
-        animation: grow 7s cubic-bezier(0.19, 1, 0.23, 1) infinite;
-    }
-    
-    .bar:nth-child(1){
-        margin-left: -15em;
-        transform:scaleY(1);
-        color: #0004ff;
-    }
-    
-  .bar:nth-child(3){
-        margin-left: 0em;
-        transform:scaleY(3);
-        color: #d91cff;
-        
-    }
-    
-    
-    .bar:nth-child(2){
-        margin-left: -7.5em;
-        transform:scaleY(2);
-        color: #ffe600;
-    }
-    
-   
- 
-    
-    @keyframes grow{
-        0%{
-            transform: scaleY(0);
-        }
-    }
-    
-    
-    
-    .face{
-        margin: -2.5em;
-        width: 5em;
-        height: 5em;
-        backfront-visibility:hidden;
-        background: currentColor;
-    }
-    
-    .face:nth-child(n + 2):before{
-        content: '';
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: inherit;
-        height: inherit;
-        opacity: .05;
-        background: inherit;
-        
-    }
-    
-    .face:nth-child(1){
-        transform: rotate3d(1,0,0,90deg) translateZ(2.5em);
-        -webkit-filter: brightness(0.7);
-        filter: brightness(0.7);
-    }
-
-      .face:nth-child(3){
-        transform: rotate3d(0,1,0,0deg) translateZ(2.5em);
-        -webkit-filter: brightness(0.85);
-        filter: brightness(0.85);
-    }
-    .face:nth-child(2){
-        transform: rotate3d(0,1,0,-90deg) translateZ(2.5em);
-        -webkit-filter: brightness(1);
-        filter: brightness(1);
-    }
-    
-  
- 
 </style>
 
 
@@ -180,33 +90,30 @@
     </a>
 </div>
 
-
-
-
-<div class="maindiv">
-    
-    <div class="bar">
-        <div class="face"></div>
-        <div class="face"></div>
-        <div class="face"></div>
-        <div class="face"></div>
-    </div>
-    
-    <div class="bar">
-        <div class="face"></div>
-        <div class="face"></div>
-        <div class="face"></div>
-        <div class="face"></div>
-    </div>
-    
-    <div class="bar">
-        <div class="face"></div>
-        <div class="face"></div>
-        <div class="face"></div>
-        <div class="face"></div>
-    </div>
+<div>
+    <h1 class="playful" aria-label="Wash your hands">
+        <span aria-hidden="true">Y</span>
+        <span aria-hidden="true">O</span>
+        <span aria-hidden="true">U</span>
+        <span aria-hidden="true">'</span>
+        <span aria-hidden="true">R</span>
+        <span aria-hidden="true">E</span>
+        <br>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true">T</span>
+        <span aria-hidden="true">H</span>
+        <span aria-hidden="true">E</span>
+        <br>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true">W</span>
+        <span aria-hidden="true">I</span>
+        <span aria-hidden="true">N</span>
+        <span aria-hidden="true">N</span>
+        <span aria-hidden="true">E</span>
+        <span aria-hidden="true">R</span>
+        <span aria-hidden="true">!</span>
+    </h1>
 </div>
-
 <script src="script.js"></script>
 </body>
 </html>
