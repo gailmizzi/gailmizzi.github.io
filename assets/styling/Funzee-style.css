@@ -205,7 +205,7 @@ header nav .imageDiv img{
   width: 100px !important;
   height: 100px !important;
   border: none;
-  background-color: none;
+  
   padding: 1px 700px;
   font-size: 50px;
   cursor: pointer;
@@ -282,7 +282,7 @@ input {
   text-align: center;
   padding-left: 150px;
   opacity: 65%;
-  border-radius:none ;
+  border-radius: 0%;
   font-family: "M PLUS Rounded 1c", black,  sans-serif;
   font-size: 20px;
 }
@@ -539,31 +539,26 @@ main section h1, main section p{
   .playful span {
     position: relative;
     color: #2238ff;
-    text-shadow: textShadow(0.25, 6, #E485F8);
     animation: scatter 1.75s infinite;
   }
   
   .playful span:nth-child(2n) {
     color: #ff453f;
-    text-shadow: textShadow(0.25, 6, #e0ff43);
     animation-delay: 0.3s;
   }
   
   .playful span:nth-child(3n) {
     color: #9bd837;
-    text-shadow: textShadow(0.25, 6, #029e8f);
     animation-delay: 0.15s;
   }
   
   .playful span:nth-child(5n) {
     color: #7e22ff;
-    text-shadow: textShadow(0.25, 6, #ff78e2);
     animation-delay: 0.4s;
   }
   
   .playful span:nth-child(7n), .playful span:nth-child(11n) {
     color: #FF9C55;
-    text-shadow: textShadow(0.25, 6, #f92a2a);
     animation-delay: 0.25s;
   }
   
