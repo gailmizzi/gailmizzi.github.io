@@ -517,7 +517,10 @@ main section h1, main section p{
 
 
 
-/* Winner annimation*/
+
+
+/*Winner animation*/
+
 
   @function textShadow($precision, $size, $color){
     $value: null;
@@ -576,9 +579,10 @@ main section h1, main section p{
     }
   }
   
-
+ 
+  
   h1 {
-    font-size: 100px;
+    font-size: 65px;
     text-transform: uppercase;
     font-family: "Archivo Black", "Archivo", sans-serif;
     font-weight: normal;
