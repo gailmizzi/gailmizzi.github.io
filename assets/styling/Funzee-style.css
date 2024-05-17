@@ -219,22 +219,22 @@ header nav .imageDiv img{
   display: flex;
 }
 
-main, .mainDiv2{
+main, .mainDiv2 .mainDiv3{
   flex: 5;
 }
 
-main section, .mainDiv2 section{
+main section, .mainDiv2 section, .mainDiv3 section{
   display: flex;
   width: 100%;
   max-height: 500px;
   overflow: hidden;
 }
 
-main section div, .mainDiv2 section div{
+main section div, .mainDiv2 section div,  .mainDiv3 section div{
   flex: 1;
 }
 
-.mainDiv div, .mainDiv2 div{
+.mainDiv div, .mainDiv2 div,  .mainDiv3 div{
   display: flex;
   width: 100%;
   max-height: 400px;
@@ -592,14 +592,14 @@ main section h1, main section p,.mainDiv2 section h6, .mainDiv2 section p{
  
   
   h1 {
-    font-size: 65px;
+    font-size: 100px;
     text-transform: uppercase;
     font-family: "Archivo Black", "Archivo", sans-serif;
     font-weight: normal;
     display: block;
     width: 666px;
     max-width: 80vw;
-    min-height: 90px;
+    min-height: 200px;
     height: auto;
     text-align: center;
     margin: 10rem auto;
